@@ -24,7 +24,7 @@ def sort_csv_for_channel(data_path):
     return channels
 
 
-def get_data_from_csv(filename, base_path:str=r'Quantum-Imaging\HBT_data'):
+def get_data_from_csv(filename, base_path:str=r'HBT_data'):
     file_path = os.path.join(base_path, filename)
     print(file_path)
     df=pd.read_csv(file_path, header=None)
